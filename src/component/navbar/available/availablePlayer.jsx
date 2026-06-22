@@ -1,4 +1,4 @@
-import Players from "../UI/players";
+import Players from "../UI/card";
 
 const AvailablePlayer = ({players}) => {
     // console.log(players)
