@@ -1,11 +1,13 @@
 import { use } from 'react';
+import AvailablePlayer from '../available/availablePlayer';
 
 const PlayerCard = ({playerPromis}) => {
-    const playerData =use(playerPromis)
-    // console.log(playerData)
+    const players =use(playerPromis)
+    
     return (
-        <div>
-            <h1>Player:{playerData.length}</h1>
+        <div className='container mx-auto'>
+            <h1>Player:{players.length}</h1>
+            <AvailablePlayer players={players}/>
         </div>
     );
 };

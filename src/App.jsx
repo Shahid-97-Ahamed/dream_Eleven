@@ -12,15 +12,11 @@ function App() {
   const playerPromis = playerfetch()
   return (
     <>
-    <header>
-      {/* nav bar */}
       <Navbar/>
-      {/* header section */}
       <Banner/>
       <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
         <PlayerCard playerPromis={playerPromis}/>
-      </Suspense>
-    </header>
+      </Suspense>   
     </>
   )
 }
